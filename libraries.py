@@ -1,6 +1,9 @@
-
-pip install gymnasium[atari] # For Atari environments
-
-pip install tensorflow tensorflow-gpu  # If you prefer TensorFlow/Keras
-
-pip install numpy opencv-python  # CV2 might be needed for observation preprocessing
+import gymnasium as gym  
+import numpy as np
+import random
+import cv2   # for image preprocessing if needed
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import torch.nn.functional as F
+from collections import deque
